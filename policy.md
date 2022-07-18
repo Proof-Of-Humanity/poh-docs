@@ -25,6 +25,11 @@ The criteria to be met for a submission to be accepted in this registry are the 
 - The submitter must provide all the elements required for the submission.
   - For example, a submitter cannot be registered if his video submission does not display his Ethereum address.
   
+- The submitter is not a sybil, and will not become a sybil after successful registration. A sybil is defined as an actor that has direct control over registered human accounts that don't represent them. Since this is very hard to prove, it is enough to invoke this criteria if it is very likely for the submitter to be a sybil. 
+  - For example, a human cannot be registered if the submitter is not the same person as them.
+  - For example, a human cannot be registered if their submitter is a *farmer*, an actor that submits multiple humans.
+  - For example, a human child cannot be registered if their parent (who, technically is the submitter) is controlling their private key.
+
 ## Elements Required for Submission
 
 Any submitter registering to the list has to provide evidence that he is compliant with the acceptance criteria. The required evidence is to be decided through Kleros governance and can be updated to take into account technological evolutions and the evolution of attack vectors.
@@ -88,8 +93,9 @@ In order to curate this registry, any user can challenge submissions in “Pendi
 
 The challenges types are the following:
 
-- Duplicate: The submitter is already registered in the list.
-  - The challenger has to point to the identity already registered or to a duplicate submission. If someone tries to register multiple times simultaneously, all submissions are to be rejected.
+- Duplicate: The submitter is already registered in the list, or the submitter is a sybil.
+  - If the submitter is already registered, the challenger has to point to the identity already registered or to a duplicate submission. If someone tries to register multiple times simultaneously, all submissions are to be rejected.
+  - If the submitter is a sybil, the challenger has to prove within reason that the submitter is a sybil.
 
 - Does not exist: The submitter does not exist.
   - The challenger can demonstrate that the submitter is not an existing human being.
@@ -120,4 +126,3 @@ The removal requester has to either:
   - Example 2: Send a removal request from a different address than the submitter.
     - Evidence Name: Self-removal of submission
     - Evidence Description: I am the submitter and I want to remove this submission. The video attached is a recording of myself saying the sentence “I want to remove my own submission from the Proof of Humanity registry.”
-

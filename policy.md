@@ -25,10 +25,10 @@ The criteria to be met for a submission to be accepted in this registry are the 
 - The submitter must provide all the elements required for the submission.
   - For example, a submitter cannot be registered if his video submission does not display his Ethereum address.
   
-- The submitter is not a sybil, and will not become a sybil after successful registration. A sybil is defined as an actor that has direct control over registered human accounts that don't represent them. Since this is very hard to prove, it is enough to invoke this criteria if it is very likely for the submitter to be a sybil. 
+- The submitter is not a puppeteer, and will not become a sybil after successful registration. A puppeteer is defined as an actor that has direct control over registered human accounts that don't represent them. Since this is very hard to prove, it is enough to invoke this criteria if it is extremely likely for the submitter to be a puppeteer. To invoke this reason, the burden of proof resides in the challenging side, in case a registration is disputed, or in the remover side, in case a profile is being removed. This side must provide an explanation for why, within reason, the submitter is a puppeteer. Given the subjectivity, jurors must weigh doubts and unclear points in favor of including the submission.
   - For example, a human cannot be registered if the submitter is not the same person as them.
   - For example, a human cannot be registered if their submitter is a *farmer*, an actor that submits multiple humans.
-  - For example, a human child cannot be registered if their parent (who, technically is the submitter) is controlling their private key.
+  - For example, a human child cannot be registered if their parent (who technically is the submitter) is controlling their private key.
 
 ## Elements Required for Submission
 
@@ -93,9 +93,9 @@ In order to curate this registry, any user can challenge submissions in “Pendi
 
 The challenges types are the following:
 
-- Duplicate: The submitter is already registered in the list, or the submitter is a sybil.
+- Duplicate: The submitter is already registered in the list, or the submitter is a puppeteer.
   - If the submitter is already registered, the challenger has to point to the identity already registered or to a duplicate submission. If someone tries to register multiple times simultaneously, all submissions are to be rejected.
-  - If the submitter is a sybil, the challenger has to prove within reason that the submitter is a sybil.
+  - If the submitter is a puppeteer, the challenging side has to prove within reason that the submitter is a puppeteer. The burden of proof resides on the challenging side, who must explain why, within a reasonable interpretation, the chances of the submitter being a puppeteer are extremely high. Dubious motives weigh in favor of including the profile.
 
 - Does not exist: The submitter does not exist.
   - The challenger can demonstrate that the submitter is not an existing human being.

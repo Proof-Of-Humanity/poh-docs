@@ -101,6 +101,19 @@ The challenges types are the following:
 - Deceased: The submitter has existed but does not exist anymore.
   - The challenger can provide evidence that the submitter is dead such as a death certificate, an obituary, or public records.
   - The challenged submitter can provide a video of himself reading a recent block hash. Submitters not able to give recent proof of life are to be considered deceased.
+
+## Vouchallenges
+
+A vouchallenge is the act of using the vouch feature of registered humans to make the vouched profile vulnerable to a "Incorrect Submission" challenge. Once vouched, the challenge takes place (with the same voucher address or not) and the submitter loose the dispute. This practice is against the spirit of vouching. A voucher must check and ensure that the vouched profile is okay and not abuse from the submitter deposit. For that reason, it will be valid to ask for removal to those profiles that makes vouchallenges and the jurors will have to accept the removal.
+
+### Conditions to consider a vouchallenger as such
+
+- A profile that has vouched 2 (two) or more submission that ended with "Incorrect Submission" removal.
+- A profile that make a single (1) vouch for a submission that ends with "Incorrect Submission" removal, after being already removed previously. No matter the times nor the causes for previous voucher removals. No matter if the voucher had different profiles or different addreses. 
+
+### Retroactiveness
+
+A profile that already meets the conditions to be considered a vouchallenger but has only vouched profiles registered before the HIP-58 update will not be candidate for a removal request. However, if that profile performs at least 1 new vouch that ends in "Incorrect Submission" removal, it will the removal request will be valid and the jurors will have to accept it.
   
 ## Removal Request
 
@@ -113,6 +126,10 @@ The removal requester has to either:
     - Evidence name: This user video is a deep-fake
     - Evidence description: You will find in the attached file an analysis report proving that this video is deep-faked.
 
+- Provide evidence that the submitter is a vouchallenger or is using their profile for vouchallenge attacks. 
+  - Example 1: Send a removal request for a first time vouchallenger
+    - Evidence name: This user is performing vouchallenge attacks
+    - Evidence description: You will find in the attached file an analysis where I can show you that the user has vouched two or more 
 
 - Or provide evidence that he is the submitter and wants to voluntarily remove his submission.
   - Example 1: Send a removal request from the same address as the submitter.

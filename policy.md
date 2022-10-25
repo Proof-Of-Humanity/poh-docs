@@ -127,9 +127,9 @@ The removal requester has to either:
     - Evidence description: You will find in the attached file an analysis report proving that this video is deep-faked.
 
 - Provide evidence that the submitter is a vouchallenger or is using their profile for vouchallenge attacks. 
-  - Example 1: Send a removal request for a first time vouchallenger
+  - Example: Send a removal request for a first time vouchallenger
     - Evidence name: This user is performing vouchallenge attacks
-    - Evidence description: You will find in the attached file an analysis where I can show you that the user has vouched two or more 
+    - Evidence description: You will find in the attached file an analysis where I can show you that the user has vouched two or more profiles that has ended in "Incorrect submission" removal. 
 
 - Or provide evidence that he is the submitter and wants to voluntarily remove his submission.
   - Example 1: Send a removal request from the same address as the submitter.

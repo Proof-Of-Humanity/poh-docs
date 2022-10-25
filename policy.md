@@ -104,7 +104,7 @@ The challenges types are the following:
 
 ## Vouchallenges
 
-A vouchallenge is the act of using the vouch feature of registered humans to make the vouched profile vulnerable to a "Incorrect Submission" challenge. Once vouched, the challenge takes place (with the same voucher address or not) and the submitter loose the dispute. This practice is against the spirit of vouching. A voucher must check and ensure that the vouched profile is okay and not abuse from the submitter deposit. For that reason, it will be valid to ask for removal to those profiles that makes vouchallenges and the jurors will have to accept the removal.
+A vouchallenge is the act of using the vouch feature of registered humans to make the vouched profile vulnerable to a "Incorrect Submission" challenge. Once vouched, the challenge takes place (with the same voucher address or not) and the submitter loose the dispute. This practice is against the spirit of vouching. A voucher must check and ensure that the vouched profile is okay and not abuse from the submitter deposit. For that reason, it will be valid to ask for the removal to those profiles that makes vouchallenges and the jurors will have to accept the removal.
 
 ### Conditions to consider a vouchallenger as such
 

@@ -24,6 +24,8 @@ The criteria to be met for a submission to be accepted in this registry are the 
   
 - The submitter must provide all the elements required for the submission.
   - For example, a submitter cannot be registered if his video submission does not display his Ethereum address.
+
+- The submitter must respect the vouchallenger removal period, as defined in HIP-57 and its derivatives.
   
 ## Elements Required for Submission
 
@@ -86,6 +88,7 @@ None of the provided information should be purposely offensive or hateful (ex: a
 ## Challenge Types
 
 In order to curate this registry, any user can challenge submissions in “Pending Registration” state that they deem non-compliant with the above-cited acceptance criteria. A user challenging a pending submission needs to specify a challenge type. A challenge can be rejected if the challenge type specified is incorrect.
+A challenge must be ruled as "Refuse to arbitrate" in the case that it is the result of a vouch from a human previously removed due to vouchallenging. 
 
 The challenges types are the following:
 
@@ -121,4 +124,64 @@ The removal requester has to either:
   - Example 2: Send a removal request from a different address than the submitter.
     - Evidence Name: Self-removal of submission
     - Evidence Description: I am the submitter and I want to remove this submission. The video attached is a recording of myself saying the sentence “I want to remove my own submission from the Proof of Humanity registry.”
+
+- Or provide evidence that the submitter is a vouchallenger in accordance to the Vouchallengers Section (HIP-57) below. 
+
+## Vouchallengers Section (HIP-57)
+
+### 1. Definition
+For the purposes of this document, a **vouchallenge** is a vouch performed on a profile that results in that profile being challenged for any challenge type. 
+
+The **vouchallenger** is the profile that performs a vouchallenge, AND:
+- A profile that did not perform a whitehat vouchallenge according to sub-section 1.2. of this Section, AND
+- A profile that exceeds or equals the `max_vouchallenge_ratio`. The ratio is calculated as `vouches_wtih_incorrect_submissions / total_vouches`, AND 
+- A profile that has vouched at least `initial_vouchallenge_threshold` that ended in any type of challenge, OR
+- A profile that after being already removed for being a vouchallenger, makes at least `repeated_vouchallenge_threshold=1` vouchallenges, OR
+- A profile that was bribed to perform a single vouchallenge according to sub-section 1.3 of this Section.
+
+Parameters to consider: 
+`max_vouchallenge_ratio = 2/3`
+`initial_vouchallenge_threshold=2`, 
+`repeated_vouchallenge_threshold=1`
+
+#### 1.1. Retroactivity
+
+This section is not retroactive to profiles that performed vouchallenges in the past that cross the initial_vouchallenge_threshold. However, if a previously active vouchallenger performs a new vouchallenge, and it is above the `repeated_vouchallenge_threshold` it will be considered a vouchallenger and will be removed.
+
+#### 1.2. Whitehat vouchallenge
+
+In the case the deposit is returned to the challenged person from a vouchallenger that meets the criteria of section 1, that vouchallenge is not considered for the total count. The total deposit fund must be returned before the end of the evidence period of the removal request challenge of that same vouchallenge. 
+
+#### 1.3. Bribed vouchallenge
+
+If there is proof (transaction records) that a vouchallenge is performed by a wallet/profile that received funds or tokens from another wallet/profile or a standalone wallet, the total count of vouchallenges is added to both wallets. NOTE: Vouchallenger counts CAN apply to unregistered ethereum wallets.
+
+Proof applies for wallets directly or indirectly connected to other wallets by funding/being funded in the last 6 months. 
+
+### 2. Inadmissibility period
+
+A vouchallenger cannot be admitted back into the registry within its inadmissibility period. It is calculated as inadmissibility_period = 
+
+`inadmissibility_period = base_period*(times_removed)`
+
+That `base_period` is 120 days (4 months). A vouchallenger that continues vouchallenging after a removal will be removed again folowing sub-section 1 of this Section. The next inadmissible periods will be calculated considering the number of `times_removed` from the registry due to a vouchallenge.
+
+### 3. Case Examples
+
+* A recently registered profile that vouches its first profile that ends in challenge. 
+	* Not a vouchallenger since the minimum of vouchallenges is 2
+* A profile that has 24 vouchallenges but 340 total vouches
+	* The ratio 24/340 is 0.07, so not a vouchallenger
+* A profile that has 2 vouchallenges and 3 total vouches
+	* The ratio = 2/3, so it is a vouchallenger
+* A profile that was previously removed as a vouchallenger and after re-registering, it vouchallenges again
+	* The profile is a vouchallenger
+* A person that attemps re-registering the day after they get removed as a vouchallenger
+	* The profile is challengeable and whoever challenges it gets the vouchallenger deposit.
+* A profile that has a ratio of 0.87 before the implementation of this hip, and then performs a challenge:
+	* Sub-section 1.1 applies, profile is a vouchallenger
+* A profile that is being requested a removal for vouchallenging, but returns the deposit to the address of the vouchallenged
+	* Not a vouchallenger, and the vouchallenged is not added to total vouchallenges.
+* A profile that it is proven that he received funds from a wallet tied with transactions from a known or reported vouchallenger address (registered or not).
+	* A vouchallenger, no matter the ratio according to subsection 1.3.
 

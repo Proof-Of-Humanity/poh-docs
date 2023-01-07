@@ -25,7 +25,7 @@ The criteria to be met for a submission to be accepted in this registry are the 
 - The submitter must provide all the elements required for the submission.
   - For example, a submitter cannot be registered if his video submission does not display his Ethereum address.
 
-- The submitter must respect the vouchallenger removal period, as defined in HIP-57 and its derivatives.
+- The submitter must respect the vouchallenger removal period, as defined in HIP-58 and its derivatives.
   
 ## Elements Required for Submission
 

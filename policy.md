@@ -172,8 +172,8 @@ That `base_period` is 120 days (4 months). A vouchallenger that continues voucha
 	* Not a vouchallenger since the minimum of vouchallenges is 2
 * A profile that has 24 vouchallenges but 340 total vouches
 	* The ratio 24/340 is 0.07, so not a vouchallenger
-* A profile that has 2 vouchallenges and 3 total vouches
-	* The ratio = 2/3, so it is a vouchallenger
+* A profile that has 2 vouchallenges and 4 total vouches
+	* The ratio = 1/2, so it is a vouchallenger
 * A profile that was previously removed as a vouchallenger and after re-registering, it vouchallenges again
 	* The profile is a vouchallenger
 * A person that attemps re-registering the day after they get removed as a vouchallenger

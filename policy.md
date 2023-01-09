@@ -25,7 +25,7 @@ The criteria to be met for a submission to be accepted in this registry are the 
 - The submitter must provide all the elements required for the submission.
   - For example, a submitter cannot be registered if his video submission does not display his Ethereum address.
 
-- The submitter must respect the vouchallenger removal period, as defined in HIP-58 and its derivatives.
+- The submitter must respect the vouchallenger removal period, as defined in the Vouchallenger section of this policy.
   
 ## Elements Required for Submission
 
@@ -127,7 +127,7 @@ The removal requester has to either:
 
 - Or provide evidence that the submitter is a vouchallenger in accordance to the Vouchallengers Section (HIP-57) below. 
 
-## Vouchallengers Section (HIP-57)
+## Vouchallengers Section (HIP-58)
 
 ### 1. Definition
 For the purposes of this document, a **vouchallenge** is a vouch performed on a profile that results in that profile being challenged for any challenge type. 
@@ -140,7 +140,7 @@ The **vouchallenger** is the profile that performs a vouchallenge, AND:
 - A profile that was bribed to perform a single vouchallenge according to sub-section 1.3 of this Section.
 
 Parameters to consider: 
-`max_vouchallenge_ratio = 2/3`
+`max_vouchallenge_ratio = 1/2`
 `initial_vouchallenge_threshold=2`, 
 `repeated_vouchallenge_threshold=1`
 
